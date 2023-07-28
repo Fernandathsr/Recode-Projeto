@@ -1,0 +1,49 @@
+body{
+    background-image: url("../image/background");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.contact-form, .data {
+    display: block;
+    margin: 20px;
+    padding-top: 40px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.data {
+    align-items: stretch;
+    width: 30%;
+}
+
+.data input[type="text"]::placeholder, .data input[type="email"]::placeholder, .data textarea::placeholder {
+    color: #050404;
+}
+
+.data input[type="text"], .data input[type="email"], .data textarea, #submit {
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+button#submit {
+    width: 100px;
+    background-color: #007BFF;
+    border: 1px solid #020202f1;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+

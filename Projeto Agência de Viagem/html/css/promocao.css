@@ -1,0 +1,29 @@
+body{
+    background-image: url("../image/background");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 500px;
+    height: 560px;
+    
+}
+
+.tamanho {
+border: 2px solid black;
+border-radius: 20px;
+}
+
+img {
+    max-height: 500px;
+    border-radius: 20px;
+}

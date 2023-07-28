@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+main { 
+        background-image: url("../image/background");
+        background-size: cover; 
+        background-position: center; 
+        height: 100vh; 
+        justify-content: center;
+        align-items: center;
+}
+
+.principal {
+    display: flex;
+    color: rgb(0, 0, 0);
+    margin-top: -40px;
+    text-align: justify;
+
+}
+
+.borda {
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5); 
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}   
