@@ -1,21 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/contato.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Destino</title>
+    <link rel="stylesheet" href="./css/destino.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand text-white" href="/html/principal.html">Traveland</a>
-            <button class="navbar-toggle bg-light" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,15 +22,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="/html/principal.html">Home</a>
+                        <a class="nav-link active text-white" aria-current="page" href="principal.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/html/destino.html">Destino</a>
+                        <a class="nav-link text-white" href="destino.html">Destino</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Fale conosco</a>
+                        <a class="nav-link text-white" href="contato.html">Fale conosco</a>
                     </li>
-                    <li class="nav-item dropdown text-light">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Clique aqui
@@ -53,21 +52,31 @@
             </div>
         </div>
     </nav>
-    <div class="right-side">
-        <form class="contact-form">
-            <h2 class="title">Formulário de Contato</h2>
-            <div class="data">
-                <input type="text" name="name" id="name" placeholder="Nome Completo">
-                <input type="email" name="email" id="email" placeholder="E-mail válido">
-                <textarea name="message" id="message" cols="80" rows="10" placeholder="Sugestões, dúvidas ou algum problema que você teve"></textarea>
-            </div>
-            <button type="submit" id="submit">Enviar</button>
-        </form>
-    </div>
-    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    <main class="corpodestino">
+        <div class="container">
+
+        <div class="booking-form">
+            <h2>Encontre a sua próxima aventura!</h2>
+            <label for="origin">Origem:</label>
+            <input type="text" id="origin" name="origin" placeholder="Digite a cidade de partida">
+
+            <label for="destination">Destino:</label>
+            <input type="text" id="destination" name="destination" placeholder="Digite a cidade de destino">
+
+            <label for="departure-date">Data de Partida:</label>
+            <input type="date" id="departure-date" name="departure-date">
+
+            <label for="return-date">Data de Retorno:</label>
+            <input type="date" id="return-date" name="return-date">
+
+            <button type="submit">Buscar</button>
+        </div>
+        </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 </body>
 
