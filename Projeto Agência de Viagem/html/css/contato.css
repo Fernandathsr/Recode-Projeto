@@ -6,30 +6,48 @@ body{
 }
 
 
-.contact-form, .data {
-    display: block;
-    margin: 20px;
-    padding-top: 40px;
-    padding: 10px;
-    text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+main { 
+        background-image: url("../image/background");
+        background-size: cover; 
+        background-position: center; 
+        height: 100vh; 
+        justify-content: center;
+        align-items: center;
+}
+
+.container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
-    
+    height: 100vh;
+}
+/* Estilos para a div do formulário de destino */
+.booking-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
-.data {
-    align-items: stretch;
-    width: 30%;
+.booking-form h2 {
+    text-align: center;
 }
 
-.data input[type="text"]::placeholder, .data input[type="email"]::placeholder, .data textarea::placeholder {
-    color: #050404;
+.booking-form label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-.data input[type="text"], .data input[type="email"], .data textarea, #submit {
-    display: flex;
+.booking-form input[type="text"],
+.booking-form input[type="date"] {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -37,13 +55,19 @@ body{
     border-radius: 20px;
 }
 
-button#submit {
-    width: 100px;
+.booking-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
     background-color: #007BFF;
-    border: 1px solid #020202f1;
-    border-radius: 20px;
-    font-weight: bold;
-    color: #000000;
+    color: #080808;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #0056b3;
 }
 
 
