@@ -100,26 +100,3 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-
-.textando {
-  color: var(--bs-white);
-  padding-top: 340px;
-  text-align: center;
-  max-height: 800px;
-
-}
-
-
-
-section {
-  margin: 20px;
-  font-size: 16px;
-}
-
-
-.textajeitar {
-  align-items: center;
-  text-align: center;
-}
-
