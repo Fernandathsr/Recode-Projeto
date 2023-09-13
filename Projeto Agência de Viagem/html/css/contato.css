@@ -89,52 +89,35 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
-}
-
-.descendo {
-  margin-top: 80px;
-}
-
-img {
-  border-radius: 20px;
-}
-
-footer {
-  background-color: var(--bs-black); 
-  color: #fff; 
-  padding: 8px; 
-
-}
-
-.rodape-texto {
-  max-width: 800px; 
-  margin: 0 auto; 
-  text-align: center; 
-  color: var(--bs-body-bg);
-}
-
-
-header {
-margin: 0px;
-padding: 0px;
-margin-top: 56px;
-background-color: #000;
-}
-
-main {
-  margin: 0px;
-  margin-top: 40px;
+  background-color: #adb5bd;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-header {
 
-  background: linear-gradient(rgba(185, 185, 198, 0.7), rgba(86, 86, 95, 0.7)), url(../img/nuvem\ \(2\).jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background: linear-gradient(rgba(20,20,31,0.7), rgba(20,20,31,0.7)), url(../img/telefone.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
 
-}
 
+  footer {
+    background-color: var(--bs-black); 
+    color: #fff; 
+    padding: 8px; 
+    height: 90px;
+  }
+  
+  .rodape-texto {
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: center; 
+    color: var(--bs-body-bg);
+  }
+  

@@ -93,23 +93,20 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: #adb5bd;
-  background-image: url(../img/fundo.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
 
 .textando {
-  color: var(--bs-white);
-  padding-top: 340px;
+  margin: 0px;
+  margin-top: 360px;
   text-align: center;
-  max-height: 800px;
-
 }
 
+.text{
+  font-size: large;
+}
 
 
 section {
@@ -123,3 +120,25 @@ section {
   text-align: center;
 }
 
+.hero-header {
+
+  background: linear-gradient(rgba(20,20,31,0.7), rgba(20,20,31,0.7)), url(../img/fundo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+footer {
+  background-color: var(--bs-black); 
+  color: #fff; 
+  padding: 8px; 
+  height: 90px;
+}
+
+.rodape-texto {
+  max-width: 800px; 
+  margin: 0 auto; 
+  text-align: center; 
+  color: var(--bs-body-bg);
+}
