@@ -1,0 +1,27 @@
+CREATE DATABASE Projeto;
+
+use Projeto;
+
+CREATE TABLE Cliente(
+idCliente INT AUTO_INCREMENT PRIMARY KEY,
+nomeCliente VARCHAR(60) NOT NULL,
+cpfCliente VARCHAR (11) NOT NULL,
+emailCliente VARCHAR(40)NOT NULL,
+enderecoCliente TEXT NOT NULL,
+telefone VARCHAR(15) NOT NULL
+);	
+
+CREATE TABLE Pedido (
+idPedido INT AUTO_INCREMENT PRIMARY KEY,
+valorPedido DECIMAL (10, 2),
+dataPedido DATETIME,
+idCliente INT NOT NULL,
+idPassagem INT NOT NULL, 
+FOREIGN KEY (idCliente) REFERENCES Cliente (idCliente),	
+FOREIGN KEY (idPassagem) REFERENCES Passagem (idPassagem)
+);
+
+CREATE TABLE Passagem (
+    idPassagem INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    destinoViagem VARCHAR(40)
+)
