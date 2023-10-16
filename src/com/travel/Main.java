@@ -50,6 +50,7 @@ public class Main {
                         System.out.println("Listar Cliente");
                         System.out.println("Atualizar Cliente");
                         System.out.println("Deletar Cliente");
+                        System.out.println("Digite 5 para voltar ao menu inicial!!!");
                         int opcao2 = scan.nextInt();
                         switch (opcao2) {
                             case 1: {   //CREATE
@@ -151,6 +152,7 @@ public class Main {
                         System.out.println("Listar Destinos");
                         System.out.println("Atualizar Destino");
                         System.out.println("Deletar Destino");
+                        System.out.println("Digite 5 para voltar ao menu inicial!!!");
                         int opcao2 = scan.nextInt();
                         switch (opcao2) {
                             case 1: { //CREATE
@@ -237,6 +239,7 @@ public class Main {
                         System.out.println("Listar Pedido");
                         System.out.println("Atualizar Pedido");
                         System.out.println("Deletar Pedido");
+                        System.out.println("Digite 5 para voltar ao menu inicial!!!");
                         int opcao2 = scan.nextInt();
                         switch (opcao2) {
                             case 1: {
